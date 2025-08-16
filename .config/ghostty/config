@@ -1,0 +1,9 @@
+theme = catppuccin-mocha
+title = " "
+window-width = 120
+window-height = 32
+macos-titlebar-style = tabs
+shell-integration-features = no-cursor
+cursor-style = block
+cursor-style-blink = false
+cursor-invert-fg-bg = true

@@ -28,6 +28,9 @@ brew install starship
 
 # Install zsh-syntax-highlighting
 brew install zsh-syntax-highlighting
+
+# Install Ghostty
+brew install --cask ghostty
 ```
 
 ## Installation

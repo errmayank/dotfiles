@@ -38,8 +38,8 @@ brew install --cask ghostty
 1. **Clone this repository:**
 
    ```bash
-   git clone https://github.com/errmayank/dotfiles.git ~/.dotfiles
-   cd ~/.dotfiles
+   git clone https://github.com/errmayank/dotfiles.git ~/dotfiles
+   cd ~/dotfiles
    ```
 
 2. **Create symlinks using Stow:**
@@ -56,7 +56,7 @@ brew install --cask ghostty
 ### Basic Commands
 
 ```bash
-# Create symlinks (from ~/.dotfiles directory)
+# Create symlinks (from ~/dotfiles directory)
 stow .
 
 # Remove symlinks
@@ -74,7 +74,7 @@ stow -n .
 1. Move your existing config file to this repository:
 
    ```bash
-   mv ~/.newconfig ~/.dotfiles/.newconfig
+   mv ~/.newconfig ~/dotfiles/.newconfig
    ```
 
 2. Create the symlink:

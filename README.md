@@ -1,61 +1,68 @@
 # Dotfiles
 
-Personal configuration files
+My configuration files
 
 ## Prerequisites
 
-Before setting up these dotfiles, ensure you have the following installed:
+[Homebrew](https://brew.sh/)
 
-- [GNU Stow](https://www.gnu.org/software/stow/) - For symlink management
-- [Homebrew](https://brew.sh/) - Package manager for macOS
-- [Oh My Zsh](https://ohmyz.sh/) - Zsh framework
-- [Starship](https://starship.rs/) - Cross-shell prompt
-
-### Install Prerequisites
-
-```bash
-# Install Homebrew
+```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
-# Install GNU Stow
-brew install stow
+[Ghostty](https://ghostty.org/)
 
-# Install Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Install Starship
-brew install starship
-
-# Install zsh-syntax-highlighting
-brew install zsh-syntax-highlighting
-
-# Install Ghostty
+```sh
 brew install --cask ghostty
 ```
 
-## Installation
+[GNU Stow](https://www.gnu.org/software/stow/)
+
+```sh
+brew install stow
+```
+
+[Oh My Zsh](https://ohmyz.sh/)
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+[Zsh Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+
+```sh
+brew install zsh-syntax-highlighting
+```
+
+[Starship](https://starship.rs/)
+
+```sh
+brew install starship
+```
+
+## Setup
 
 1. **Clone this repository:**
 
-   ```bash
-   git clone https://github.com/errmayank/dotfiles.git ~/dotfiles
-   cd ~/dotfiles
+   ```sh
+   git clone https://github.com/errmayank/dotfiles.git ~/dotfiles && cd ~/dotfiles
    ```
 
 2. **Create symlinks using Stow:**
 
-   ```bash
+   ```sh
    stow .
    ```
 
-3. **Reload your shell:**
-   ```bash
+3. **Reload the shell:**
+
+   ```sh
    source ~/.zshrc
    ```
 
 ### Basic Commands
 
-```bash
+```sh
 # Create symlinks (from ~/dotfiles directory)
 stow .
 
@@ -69,16 +76,17 @@ stow -R .
 stow -n .
 ```
 
-### Adding New Dotfiles
+### Adding Dotfiles
 
-1. Move your existing config file to this repository:
+1. Move the existing config file to this repository:
 
-   ```bash
+   ```sh
    mv ~/.newconfig ~/dotfiles/.newconfig
    ```
 
 2. Create the symlink:
-   ```bash
+
+   ```sh
    stow .
    ```
 
@@ -86,12 +94,18 @@ stow -n .
 
 1. Remove the symlink:
 
-   ```bash
+   ```sh
    stow -D .
    ```
 
-2. Delete the file from this repository
+2. Delete the file:
+
+   ```sh
+   rm <FILE_NAME>
+   ```
+
 3. Re-stow remaining files:
-   ```bash
+
+   ```sh
    stow .
    ```

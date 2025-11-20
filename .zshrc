@@ -10,6 +10,16 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 
+HISTSIZE=100000
+SAVEHIST=$HISTSIZE
+
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_FIND_NO_DUPS
+setopt HIST_SAVE_NO_DUPS
+
 # Google Cloud SDK
 if [ -f '/Users/mayank/google-cloud-sdk/path.zsh.inc' ]; then
   . '/Users/mayank/google-cloud-sdk/path.zsh.inc'

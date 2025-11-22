@@ -1,6 +1,6 @@
 theme = Cursor Dark
-window-width = 120
-window-height = 32
+window-width = 128
+window-height = 35
 macos-titlebar-style = tabs
 shell-integration-features = no-cursor
 cursor-style = block

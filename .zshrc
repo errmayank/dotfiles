@@ -31,6 +31,7 @@ alias py='python3'
 
 # Go
 export GOPATH=$HOME/go
+export PATH="$GOPATH/bin:$PATH"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"

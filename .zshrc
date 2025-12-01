@@ -58,3 +58,6 @@ eval "$(starship init zsh)"
 
 # pipx tools
 export PATH="$PATH:/Users/mayank/.local/bin"
+
+# LLVM
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"

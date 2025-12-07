@@ -42,6 +42,12 @@ export NVM_DIR="$HOME/.nvm"
 export PNPM_HOME="/Users/mayank/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
+# LLVM
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+export CMAKE_PREFIX_PATH="/opt/homebrew/opt/llvm"
+
 # SQLite
 export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/sqlite/lib"
@@ -59,5 +65,3 @@ eval "$(starship init zsh)"
 # pipx tools
 export PATH="$PATH:/Users/mayank/.local/bin"
 
-# LLVM
-export PATH="/opt/homebrew/opt/llvm/bin:$PATH"

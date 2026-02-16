@@ -20,15 +20,6 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
 
-# Google Cloud SDK
-if [ -f '/Users/mayank/google-cloud-sdk/path.zsh.inc' ]; then
-  . '/Users/mayank/google-cloud-sdk/path.zsh.inc'
-fi
-
-# Alias
-alias cls='clear && echo -en "\e[3J"'
-alias py='python3'
-
 # Go
 export GOPATH=$HOME/go
 export PATH="$GOPATH/bin:$PATH"
@@ -62,6 +53,6 @@ export GPG_TTY=$(tty)
 # Starship
 eval "$(starship init zsh)"
 
-# pipx tools
-export PATH="$PATH:/Users/mayank/.local/bin"
-
+# Aliases
+alias cls='clear && echo -en "\e[3J"'
+alias py='python3'

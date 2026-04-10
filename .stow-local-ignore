@@ -1,0 +1,31 @@
+# RCS
+RCS
+.+,v
+
+# CVS
+CVS
+\.\#.+
+\.cvsignore
+
+# SVN, Darcs, Mercurial
+\.svn
+_darcs
+\.hg
+
+# Git
+\.git
+\.gitignore
+\.gitmodules
+
+# Emacs
+.+~
+\#.*\#
+
+# Docs
+^/README.*
+^/LICENSE.*
+^/COPYING
+
+# Misc
+\.DS_Store
+Thumbs\.db

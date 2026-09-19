@@ -10,3 +10,4 @@ font-size = 11.75
 font-feature = -calt, -liga, -dlig
 clipboard-paste-protection = false
 right-click-action = copy
+window-save-state = always
